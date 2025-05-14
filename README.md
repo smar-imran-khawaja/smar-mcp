@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/smar-imran-khawaja-smar-mcp-badge.png)](https://mseep.ai/app/smar-imran-khawaja-smar-mcp)
+
 # Smartsheet MCP Server
 
 A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for interacting with the Smartsheet API. This server provides tools for searching, retrieving, and updating Smartsheet sheets through the MCP protocol.
