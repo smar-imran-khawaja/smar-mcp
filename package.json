@@ -1,10 +1,10 @@
 {
-  "name": "smar-mcp",
+  "name": "@smartsheet/smar-mcp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "type": "module",
   "bin": {
-    "smartsheet": "./bin/index.js"
+    "smar-mcp": "./build/index.js"
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
@@ -12,7 +12,8 @@
     "dev": "npm run build && npm run start",
     "test": "node -r dotenv/config tests/test-direct-api.js",
     "setup-claude": "node -r dotenv/config scripts/setup-claude-config.sh",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "publish": "npm run build && npm publish"
   },
   "keywords": [],
   "author": "Smartsheet",
@@ -22,7 +23,6 @@
     "@anthropic-ai/sdk": "^0.39.0",
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
-    "dotenv": "^16.4.7",
     "zod": "^3.24.2"
   },
   "devDependencies": {
